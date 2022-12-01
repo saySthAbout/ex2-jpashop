@@ -6,7 +6,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
-public class Item {
+public class Item { //ITEM입장에서는 어떤 주문서로 인해서 주문됬는지 통계를 낼일이 아니면 딱히 조회할 일이 없기 때문에 양방향 관계를 설정하지 않는다.
     @Id @GeneratedValue
     @Column(name = "ITEM_ID")
     private long id;
